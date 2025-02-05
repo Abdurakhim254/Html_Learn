@@ -11,10 +11,9 @@
 .about_us{
     display: flex;
     border: 2px solid red;
-    box-sizing: border-box;
-    margin-left: auto;
-    margin-left: auto;
-    width: 1500px;
+    width: 1400px;
+    margin-right: 40px;
+    margin-left: 40px;
     align-items: center;
     justify-content: center;
     
@@ -22,7 +21,7 @@
 .about_us__img{
     width: 486px;
     height: 486px;
-
+    gap: 40px;
 }
 
 .about_us__content__context{
@@ -32,8 +31,26 @@ line-height: 150%;
 color: #000;
 }
  
+.about_us__content{
+    box-sizing: border-box;
+    border: 2px solid red;
+    margin-left: 20px;
+    /* display: block; */
+}
 .about_us__content__btn{
     width: 193px;
     height: 63px;
     background-color: rebeccapurple ;
+}
+
+
+.customer{
+    margin-left: auto;
+    margin-left: auto;
+    border: 4px solid violet;
+    display: flex;
+}
+.customer.container{
+    display: flex;
+    justify-content: space-between;
 }
