@@ -1,81 +1,101 @@
-/*# sourceMappingURL=main.css.map */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #0d3b44;
-    color: white;
-    text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    background-color: #092c34;
+.container {
+  width: 327px;
+  height: 1106px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 192px;
 }
 
-.logo {
-    font-size: 24px;
-    font-weight: bold;
+.deliver {
+  margin-right: auto;
+  margin-left: auto;
+  width: 375px;
+  height: 1410px;
+  background: #004047;
 }
 
-nav ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
+.deliver__intro {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 100%;
+  text-align: center;
+  width: 327px;
+  height: 128px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-nav ul li {
-    margin: 0 15px;
+.deliver__intro_title {
+  width: 327px;
+  height: 100px;
 }
 
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
+.deliver__comments {
+  margin-top: 48px;
+  width: 327px;
+  height: 1106px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid red;
+  text-align: center;
+  display: block;
 }
 
-.contact-btn {
-    background-color: #f67e7e;
-    padding: 10px 20px;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
+.deliver__infos {
+  width: 327px;
+  height: 126px;
+  margin-top: 16px;
 }
 
-.about, .directors, .clients, .cta {
-    padding: 50px 20px;
+.deliver__name {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 156%;
+  text-align: center;
+  color: #79c8c7;
 }
 
-.director-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
-    max-width: 1000px;
-    margin: auto;
+.deliver__comments {
+  display: block;
+  padding-bottom: 182px;
 }
 
-.director {
-    background-color: #1a5a66;
-    padding: 20px;
-    border-radius: 10px;
+.deliver__job {
+  font-style: italic;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 138%;
+  text-align: center;
+  margin-bottom: 36px;
 }
 
-.client-logos span {
-    display: inline-block;
-    margin: 10px;
-    font-size: 18px;
+.deliver__img {
+  border-radius: 100%;
+  stroke-width: 2px;
+  stroke: #c4fffe;
 }
 
-.cta {
-    background-color: #f67e7e;
-    padding: 40px;
+.deliver__comments_card {
+  max-width: 100%;
+  margin-bottom: 48px;
+  width: 327px;
+  height: 278px;
 }
 
-footer {
-    background-color: #092c34;
-    padding: 20px;
-    text-align: center;
+.deliver__comments_card_title {
+  width: 327px;
+  height: 136px;
 }
+
+.deliver__name {
+  margin-bottom: 2px;
+}/*# sourceMappingURL=main.css.map */
