@@ -1,0 +1,81 @@
+/*# sourceMappingURL=main.css.map */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0d3b44;
+    color: white;
+    text-align: center;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #092c34;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.contact-btn {
+    background-color: #f67e7e;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.about, .directors, .clients, .cta {
+    padding: 50px 20px;
+}
+
+.director-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.director {
+    background-color: #1a5a66;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.client-logos span {
+    display: inline-block;
+    margin: 10px;
+    font-size: 18px;
+}
+
+.cta {
+    background-color: #f67e7e;
+    padding: 40px;
+}
+
+footer {
+    background-color: #092c34;
+    padding: 20px;
+    text-align: center;
+}
