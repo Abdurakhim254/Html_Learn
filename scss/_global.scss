@@ -1,12 +1,11 @@
-
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: "Roboto", serif;
     box-sizing: border-box;
 }
 
-.container{
+.container {
     margin-right: auto;
     margin-left: auto;
     text-decoration: none;
@@ -15,4 +14,12 @@
 
 .b {
     border: 2px solid red
+}
+
+.project_links {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 167%;
+    color: #fff;
 }
