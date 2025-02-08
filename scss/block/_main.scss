@@ -1,0 +1,78 @@
+.hero {
+    width: 375px;
+    height: 1073px;
+    background: #012F34;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.hero__des {
+    width: 254px;
+    height: 196px;
+    display: block;
+    margin-left: 24px;
+    margin-right: 97px;
+    padding-top: 48px;
+
+}
+
+.hero__des_dash {
+    width: 50px;
+    height: 4px;
+    background: #f67e7e;
+    margin-left: 24px;
+    margin-right: 301px;
+}
+
+.header__des_title {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 100%;
+    color: #fff;
+    text-align: start;
+    margin-top: 32px;
+    margin-left: 38px;
+}
+
+.hero__img {
+    position: absolute;
+    top: 100%;
+    left: 75%;
+}
+
+.hero__card {
+    width: 327px;
+    height: 693px;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    margin-top: 112px;
+}
+
+.hero__card_items {
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    display: block;
+    margin-bottom: 48px;
+}
+
+.hero__card_items_des_title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 156%;
+    text-align: center;
+    color: #f67e7e;
+    margin-top: 16px;
+    margin-bottom: 8px;
+
+}
+
+.hero__card_items_des_paragraph {
+    opacity: 0.8;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 167%;
+    text-align: center;
+    color: #fff;
+}
