@@ -27,13 +27,13 @@
     height: 210px;
     margin-right: auto;
     margin-left: auto;
+    // padding-top: 10  px;
 }
 
 .header__des_title {
     font-weight: 700;
     font-size: 40px;
     line-height: 100%;
-    text-align: center;
     color: #fff;
 }
 
@@ -51,9 +51,17 @@
     height: 200px;
     margin-right: 15px;
     margin-left: 16px;
-    margin-top: 97px;
+    margin-top: 124px;
 }
 
 .header__des_title_word {
     color: #f67e7e;
+}
+
+@media screen and (min-width:768px) {
+    .header{
+        width: 768px;
+        height: 700px;
+    }
+    
 }
