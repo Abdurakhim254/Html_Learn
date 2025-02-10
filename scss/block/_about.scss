@@ -1,0 +1,84 @@
+.about {
+    background-color: #004047;
+}
+
+.about>.container{
+    width: 375px;
+    height: 2062px;
+}
+
+.about__img {
+    width: 200px;
+
+}
+
+.about__title {
+    width: 327px;
+    height: 32px;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.about__cards {
+    align-items: center;
+    text-align: center;
+    margin-top: 48px;
+    margin-right: 24px;
+    margin-left: 24px;
+    display: block;
+}
+
+
+.about__cards_items {
+    background-color: #012F34;
+    margin-bottom: 24px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 32px;
+
+}
+
+.about__cards_items_item {
+    width: 279px;
+    height: 165px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 28px;
+}
+
+.about__cards_items_item_img {
+    margin-bottom: 16px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.about__cards_items_item_name {
+    width: 279px;
+    height: 28px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 156%;
+    text-align: center;
+    color: #79c8c7;
+}
+
+.about__cards_items_item_job {
+    width: 279px;
+    height: 25px;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 167%;
+    text-align: center;
+    color: #fff;
+}
+
+.about__cards_items_img {
+    width: 56px;
+    height: 56px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 28px;
+    overflow: hidden;
+}
