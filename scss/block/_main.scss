@@ -76,3 +76,44 @@
     text-align: center;
     color: #fff;
 }
+
+
+@media screen and (min-width:768px) {
+    .hero {
+        width: 768px;
+        height: 710px;
+    }
+
+    .hero__intro {
+        width: 573px;
+        height: 510px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .hero__des_dash {
+        margin-left: 40px;
+        margin-bottom: 32px;
+    }
+
+    .header__des_title {
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 100%;
+        color: #fff;
+        width: 445px;
+        height: 64px;
+        margin-left: 98px;
+        margin-right: 225px;
+    }
+
+    .hero__card {
+        width: 573px;
+        height: 346px;
+    }
+
+    .hero__img {
+        margin-top: 140px;
+        margin-left: 90px;
+    }
+}
