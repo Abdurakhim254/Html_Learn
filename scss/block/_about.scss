@@ -36,6 +36,8 @@
     margin-right: auto;
     margin-left: auto;
     padding-top: 32px;
+    width: 327px;
+    height: 281px;
 
 }
 
@@ -81,4 +83,12 @@
     margin-left: auto;
     margin-top: 28px;
     overflow: hidden;
+}
+
+.about__last_img{
+    align-items: center;
+    text-align: end;
+    width: 147px;
+    height: 100px;
+    position: absolute;
 }

@@ -16,6 +16,10 @@
   border: 2px solid red;
 }
 
+li {
+  list-style: none;
+}
+
 .header {
   background-color: #014E56;
   padding-top: 48px;
@@ -115,6 +119,8 @@
   margin-right: auto;
   margin-left: auto;
   padding-top: 32px;
+  width: 327px;
+  height: 281px;
 }
 
 .about__cards_items_item {
@@ -159,4 +165,83 @@
   margin-left: auto;
   margin-top: 28px;
   overflow: hidden;
+}
+
+.about__last_img {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: end;
+  width: 147px;
+  height: 100px;
+  position: absolute;
+}
+
+.sponsors {
+  background-color: #012F34;
+}
+
+.sponsors > .container {
+  width: 375px;
+  height: 632px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 88px;
+  text-align: center;
+}
+
+.sponsors__intro {
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 327px;
+  height: 394px;
+}
+
+.sponsors__intro_title {
+  width: 327px;
+  height: 32px;
+  margin-bottom: 64px;
+  margin-right: auto;
+  margin-left: auto;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 100%;
+  text-align: center;
+  color: #fff;
+}
+
+.sponsors__intro_title_subtitles_list_title {
+  width: 146px;
+  height: 24px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 81px;
+}
+
+.sponsors__intro_title_subtitles {
+  display: block;
+  margin-bottom: 64px;
+}
+
+.sponsors__intro_title_subtitles_list {
+  display: block;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+}
+
+.sponsors__li {
+  margin-top: 30px;
+}
+
+.contact {
+  background-color: #F67E7E;
 }/*# sourceMappingURL=main.css.map */
