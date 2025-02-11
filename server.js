@@ -1,8 +1,9 @@
-const jsonServer = require("json-server");
-const express = require("express");
+const jsonServer=require("json-server");
+const express=require('express');
 const server = jsonServer.create();
 const router = jsonServer.router("db.json");
 const middlewares = jsonServer.defaults();
+
 
 server.use(middlewares);
 

@@ -1,3 +1,25 @@
+// const {getItem,setItem}=require('./localstorage.js')
+
+// import { forIn } from "lodash"
+
+
+const getItem=(value)=>{
+    try {
+        const localdatas=localStorage.getItem(value)
+        return JSON.parse(localdatas)
+    } catch (error) {
+        return undefined
+    }
+}
+
+
+const setItem=(key,value)=>{
+    localStorage.setItem(key,JSON.stringify(value))
+}
+
+
+
+
 const box=document.querySelector('.box')
 
 const button=document.querySelector('.buttons')
@@ -11,6 +33,7 @@ const render=(data)=>{
     <h1>${item.name}</h1>
     <button class="delete" id="${item.id}">Delete</button>
     <button class="edit" id="${item.id}">Edit</button>
+    <button class="save_local" id="${item.id}">Save btn</button>
     </div>
     `
     ).join("")
@@ -24,13 +47,25 @@ const getData=async()=>{
         })
         
         const data=await res.json()
-
         render(data)
     } catch (error) {
         alert(error.message)
     }
 }
 
+
+const getoneData=async(id)=>{
+    try {
+        const res=await fetch(`http://localhost:3600/user/${id}`,{
+            method:"GET"
+        })
+        
+        const data=await res.json()
+        return data
+    } catch (error) {
+        alert(error.message)
+    }
+}
 
 
 const deletedata=async(id)=>{
@@ -62,7 +97,6 @@ const updatedata=async(data)=>{
 
 const createdata=async(data)=>{
     try {
-        console.log(data);
         const res=await fetch("http://localhost:3600/user",{
             method:"POST",
             headers: {
@@ -70,7 +104,9 @@ const createdata=async(data)=>{
             },
             body:JSON.stringify({name:data})
         })
-        return res
+
+        
+
     } catch (error) {
         alert(error.message)
     }
@@ -78,23 +114,37 @@ const createdata=async(data)=>{
 
 
 button.addEventListener('click',(e)=>{
-    e.preventDefault()
     createdata(input.value)
+    e.preventDefault()
 })
 
 
 box.addEventListener('click',async(e)=>{
     e.preventDefault()
-    if(e.target.className=='delete'){
+    const classlists=['delete','edit','save_local']
+
+    const id=e.target.id
+    if(classlists.includes(e.target.className)){
+         if(e.target.className=='delete'){
         deletedata(e.target.id)
     }else if(e.target.className=='edit'){
         const name=prompt("Type something")
         const id=e.target.id
-        updatedata({id,name})
+        updatedata({id,name})   
+    }else{
+        const localdatas=getItem('user')||[]
+
+        const data=await getoneData(id)
+        
+        const onedata=localdatas.find((item)=>item.id==id)
+
+        if(!onedata){
+            setItem('user',[...localdatas,data])
+        }
+
     }
+    }
+
 })
-
-
-
 
 getData()
