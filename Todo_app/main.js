@@ -20,7 +20,6 @@ const render = () => {
     .join("");
 };
 
-const delbtns=document.qu
 
 buttons.addEventListener("submit", (e) => {
   e.preventDefault();
