@@ -1,0 +1,33 @@
+.footer {
+    background-color: #002529;
+}
+
+.footer>.container {
+    width: 375px;
+    height: 432px;
+    padding-top: 66px;
+}
+
+.footer__intro {
+    width: 327px;
+    height: 302px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    align-items: center;
+}
+
+.footer__intro_logo {
+    margin-right: auto;
+    margin-left: 40px;
+    width: 95px;
+    text-align: center;
+    height: 24px;
+}
+
+.footer__intro_lists {
+    width: 107px;
+    height: 25px;
+    text-align: center;
+    align-items: center;
+}

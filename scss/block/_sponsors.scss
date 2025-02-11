@@ -45,18 +45,59 @@
 }
 
 
-.sponsors__intro_title_subtitles{
+.sponsors__intro_title_subtitles {
     display: block;
     margin-bottom: 64px;
 }
 
-.sponsors__intro_title_subtitles_list{
+.sponsors__intro_title_subtitles_list {
     display: block;
     text-align: center;
     align-items: center;
     color: #fff;
 }
 
-.sponsors__li{
+.sponsors__li {
     margin-top: 30px;
+}
+
+@media screen and (min-width:768px) {
+    .sponsors>.container {
+        width: 768px;
+        height: 308px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .sponsors__intro {
+        width: 689px;
+        height: 108px;
+        margin-right: auto;
+        margin-left: auto;
+        display: block;
+    }
+
+    .sponsors__intro_title {
+        margin-bottom: 40px;
+        margin-right: auto;
+        margin-left: auto;
+        text-align: center;
+    }
+
+
+    .sponsors__intro_title_subtitles_list_title {
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 0;
+        margin-top: 30px;  
+    }
+
+    .sponsors__intro_title_subtitles_list {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+
+
 }
