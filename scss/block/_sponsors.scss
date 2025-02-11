@@ -51,7 +51,7 @@
 }
 
 .sponsors__intro_title_subtitles_list {
-    display: block;
+    display: flex;
     text-align: center;
     align-items: center;
     color: #fff;
@@ -89,13 +89,70 @@
         margin-right: auto;
         margin-left: auto;
         margin-bottom: 0;
-        margin-top: 30px;  
+        margin-top: 30px;
     }
 
     .sponsors__intro_title_subtitles_list {
         display: flex;
         align-items: center;
         justify-content: space-between;
+    }
+
+
+
+}
+
+
+
+@media screen and (min-width:1440px) {
+    .sponsors>.container {
+        width: 1440px;
+        height: 437px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .sponsors__intro {
+        width: 689px;
+        height: 108px;
+        margin-right: auto;
+        margin-left: auto;
+        display: block;
+    }
+
+    .sponsors__intro_title {
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 100%;
+        text-align: center;
+        color: #fff;
+        margin-bottom: 40px;
+        margin-right: auto;
+        margin-left: auto;
+        text-align: center;
+        width: 920px;
+        height: 48px;
+    }
+
+    .sponsors__intro_title_subtitles {
+        width: 1110px;
+        height: 45px;
+    }
+
+
+    .sponsors__intro_title_subtitles_list_title {
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 0;
+        margin-top: 30px;
+    }
+
+    .sponsors__intro_title_subtitles_list {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 1110px;
+        height: 45px;
     }
 
 
