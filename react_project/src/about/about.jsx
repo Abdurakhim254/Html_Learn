@@ -4,7 +4,7 @@ import "./about.css"
 
 export const About = () => {
     return (
-        <section className="about b">
+        <section className="about">
             <div className="container">
                 <div className="about__intro">
                     <div className="about_intro_infos">
@@ -19,9 +19,9 @@ export const About = () => {
                         </div>
                     </div>
                     <div className="about__intro_lists">
-                        <About_li text="01"/>
-                        <About_li text="02"/>
-                        <About_li text="03"/>
+                      <About_li text="01" />
+                      <About_li text="02"/>
+                      <About_li text="03"/>
                     </div>
                 </div>
             </div>
