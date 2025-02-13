@@ -1,0 +1,37 @@
+.contact {
+    width: 1440px;
+    height: 220px;
+    background: #F3603C;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 161px;
+    padding-top: 62px;
+}
+
+.contact__intro {
+    width: 1114px;
+    height: 96px;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contact__intro_title {
+    width: 445px;
+    height: 96px;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 110%;
+    letter-spacing: -0.02em;
+    color: #fff;
+}
+
+.contact__intro__link{
+    background-color: white;
+}
+
+.contact__intro__link>a{
+    color: #F3603C;
+}

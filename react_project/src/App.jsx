@@ -1,8 +1,8 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import { Header } from './header/header'
 import { About } from './about/about'
+import { Customers } from './customers/customers'
+import { Contact } from './contact/contact'
+import { Footer } from './footer/footer'
 
 
 function App() {
@@ -12,6 +12,9 @@ function App() {
     <div>
      <Header/>
      <About/>
+     <Customers/>
+     <Contact />
+     <Footer/>
     </div>
     </>
   )
