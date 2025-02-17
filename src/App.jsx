@@ -5,7 +5,6 @@ import React from 'react'
 import { Card } from './components/card'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   const [users, Setusers] = React.useState([])
 
