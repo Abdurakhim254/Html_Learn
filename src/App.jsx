@@ -1,5 +1,3 @@
-import { useState } from 'react'
-import './App.css'
 import { request } from './config/request'
 import React from 'react'
 import { Card } from './components/card'
