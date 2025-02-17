@@ -7,6 +7,7 @@ const deleteData = (id,func) => {
 }
 
 
+
 const editData = (id,func) => {
     const title=prompt("Enter title")
     request.put(`/todos/${id}`,{title}).then(res=>func())
