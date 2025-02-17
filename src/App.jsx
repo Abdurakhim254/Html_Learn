@@ -1,7 +1,6 @@
 import { request } from './config/request'
 import React from 'react'
 import { Card } from './components/card'
-
 function App() {
 
   const [users, Setusers] = React.useState([])
@@ -14,7 +13,7 @@ function App() {
   }
 
   const createData = (title) => {
-    request.post('/todos',{title})
+    request.post('/todos',{title,description:"hello"})
      setData()
   }
 

@@ -10,7 +10,7 @@ const deleteData = (id,func) => {
 
 const editData = (id,func) => {
     const title=prompt("Enter title")
-    request.put(`/todos/${id}`,{title}).then(res=>func())
+    request.put(`/todos/${id}`,{title,description:"hello"}).then(res=>func())
 }
 
 export const Card = ({ id, title,setData }) => {
