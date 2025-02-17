@@ -18,7 +18,7 @@ function App() {
      setData()
   }
 
-  console.log(inputtext);
+
   React.useEffect(setData,[])
   return (
     <>
