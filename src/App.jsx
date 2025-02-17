@@ -2,20 +2,34 @@ import { useState } from 'react'
 import './App.css'
 import { request } from './config/request'
 import React from 'react'
+import { Card } from './components/card'
 
 function App() {
   const [count, setCount] = useState(0)
 
-  const [users,Setusers]=React.useState([])
+  const [users, Setusers] = React.useState([])
 
-  React.useEffect(() => {
-    request.get('/todos').then(res=>{
-      setUsers(res.data)
-    })
-  })
+  const [inputtext,SetCurrentText]=React.useState("")
+
+  const setData = () => {
+    request.get('/todos')
+    .then(res => Setusers(res.data))
+  }
+
+  const createData = (title) => {
+    request.post('/todos',{title})
+     setData()
+  }
+
+  console.log(inputtext);
+  React.useEffect(setData,[])
   return (
     <>
-    {users.map(item=><h1>{item.title}</h1>)}
+      <div>
+        <input type="text" placeholder='Enter Something' value={inputtext} onChange={(e) => SetCurrentText(e.target.value)} />
+        <button onClick={()=>{createData(inputtext.trim("")),SetCurrentText("")}}>Press</button>
+      </div>
+      {users.map(item => <Card title={item.title} key={item.id} id={item.id} setData={setData}/>)}
     </>
   )
 }
