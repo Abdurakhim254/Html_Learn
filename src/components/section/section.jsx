@@ -18,7 +18,7 @@ export const Hero = () => {
                     </div>
                 </div>
                 <div className="hero__card">
-                    {sectionlist.map((item) => <Sectioncard img={item.img} title={item.title} />)}
+                    {sectionlist.map((item) => <Sectioncard img={item.img} title={item.title} key={item.title} />)}
                 </div>
             </section>
         </>
