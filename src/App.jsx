@@ -1,10 +1,14 @@
 import React from "react";
+import { Mainlayout } from "./Mainlayout/Mainlayout";
+import { Hero } from "./components/section/section";
 
 
 export const App = () => {
     return (
         <>
-            <h1>Salom</h1>
+            <Mainlayout>
+            <Hero />
+            </Mainlayout>
         </>
     )
 }
