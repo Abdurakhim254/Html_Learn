@@ -10,7 +10,7 @@ export const Footer = () => {
                 <h3>Our Products</h3>
             </div>
             <div className="footer__cards">
-            
+                {footerlist.map((item) => <FooterComponent img={item.img} title={item.title} subtitle={item.subtitle} price={item.price} saleprice={item.saleprice} />)}
             </div>
         </footer>
     );
