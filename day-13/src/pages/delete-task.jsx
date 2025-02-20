@@ -1,12 +1,12 @@
 import React from "react";
 import { useParams } from "react-router-dom";
 import { todoAction } from "../context/todo-context/todo-reducer";
-import {TodoContextProvider } from "../context/todo-context/todo-context";
+import { TodoContextProvider } from "../context/todo-context/todo-context";
 
 
 export const DeleteTask = () => {
 
-    const {id}=useParams()
+    const { id } = useParams()
 
 
     const { dispatch } = React.useContext(TodoContextProvider);
@@ -14,11 +14,14 @@ export const DeleteTask = () => {
 
 
     dispatch({
-        type:todoAction.DELETE_TODO,
-        value:{id}
+        type: todoAction.DELETE_TODO,
+        value: { id }
     })
 
 
 
-    return (<div>Task Deleted</div>);
+    return (<>
+        <h1>Task Deleted
+        </h1>
+    </>);
 }
