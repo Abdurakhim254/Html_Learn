@@ -1,35 +1,101 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-
+import { Box, Container, Link, Typography } from "@mui/material";
+import { Hero } from "./components/hero/hero";
+import { MainLayout } from "./layout/main-layout";
+import { Card } from "./components/carpets-card/carpets-card";
+import { newCarpets } from "./data/new-carpet";
+import { DiscountCards } from "./components/carpets-card/discount-cards";
+import { discountCarpets } from "./data/discount-carpet";
 function App() {
-  const [count, setCount] = useState(0)
-
-  return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    return (
+        <>
+            <MainLayout>
+                <Hero />
+                <Container>
+                    <Box
+                        display={"flex"}
+                        alignItems={"center"}
+                        gap={"32px"}
+                        pt={"100px"}
+                        pb={"29px"}
+                    >
+                        <Typography
+                            variant="h2"
+                            color="initial"
+                            fontSize={"40px"}
+                            fontWeight={"700"}
+                        >
+                            Новинки
+                        </Typography>
+                        <Link
+                            color="#648e7a;"
+                            pb={"9px"}
+                            fontSize={"18px"}
+                            pt={"18px"}
+                            sx={{ cursor: "pointer" }}
+                        >
+                            Все новинки
+                        </Link>
+                    </Box>
+                    <Box display={"flex"} gap={"40px"}>
+                        {newCarpets.map((item:any) => (
+                            <Card
+                                key={item.id}
+                                id={item.id}
+                                img={item.img}
+                                model={item.model}
+                                made_in={item.made_in}
+                                size={item.size}
+                                rate={item.rate}
+                                price={item.price}
+                                monthly_price={item.monthly_price}
+                            />
+                        ))}
+                    </Box>
+                </Container>
+                <Container>
+                    <Box
+                        display={"flex"}
+                        alignItems={"center"}
+                        gap={"32px"}
+                        pt={"100px"}
+                        pb={"32px"}
+                    >
+                        <Typography
+                            variant="h2"
+                            color="initial"
+                            fontSize={"40px"}
+                            fontWeight={"700"}
+                        >
+                            Скидки
+                        </Typography>
+                        <Link
+                            color="#648e7a;"
+                            pb={"9px"}
+                            fontSize={"18px"}
+                            pt={"18px"}
+                            sx={{ cursor: "pointer" }}
+                        >
+                            Все скидки
+                        </Link>
+                    </Box>
+                    <Box display={"flex"} gap={"40px"}>
+                        {discountCarpets.map((item:any) => (
+                            <DiscountCards
+                                key={item.id}
+                                id={item.id}
+                                img={item.img}
+                                model={item.model}
+                                size={item.size}
+                                made_in={item.made_in}
+                                rate={item.rate}
+                                old_price={item.old_price}
+                                new_price={item.new_price}
+                            />
+                        ))}
+                    </Box>
+                </Container>
+            </MainLayout>
+        </>
+    );
 }
-
-export default App
+export default App;
