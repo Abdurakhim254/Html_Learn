@@ -1,6 +1,5 @@
 import {
   Box,
-  Button,
   Container,
   Grid2,
   Stack,
@@ -13,6 +12,8 @@ import { SecondaryButton } from "../../components/secondary-button";
 import { ProductCard } from "../../components/product-card";
 import { Title } from "../title/title";
 import { LastCard } from "../../components/last-card";
+import { Homelinks , Mainlinks} from "../../layout/home";
+import { Link } from "react-router-dom";
 
 export const Home = () => {
   return (
@@ -50,18 +51,13 @@ export const Home = () => {
       <Box py={"100px"}>
         <Container maxWidth="xl">
           <Grid2 container spacing={"40px"}>
-            <Grid2 size={{ xs: 12, sm: 6, md: 4, lg: 3 }}>
-              <ProductCard />
-            </Grid2>
-            <Grid2 size={{ xs: 12, sm: 6, md: 4, lg: 3 }}>
-              <ProductCard />
-            </Grid2>
-            <Grid2 size={{ xs: 12, sm: 6, md: 4, lg: 3 }}>
-              <ProductCard />
-            </Grid2>
-            <Grid2 size={{ xs: 12, sm: 6, md: 4, lg: 3 }}>
-              <ProductCard />
-            </Grid2>
+            {Homelinks.map((item) => (
+              <Link to={`/home/${item.id}`} key={item.id}>
+              <Grid2 size={{ xs: 12, sm: 6, md: 4, lg: 3 }} key={item.id}>
+                <ProductCard {...item} key={item.id}/>
+              </Grid2>
+              </Link>
+            ))}
           </Grid2>
         </Container>
       </Box>
@@ -71,18 +67,13 @@ export const Home = () => {
       <Box py={"100px"}>
         <Container maxWidth="xl">
         <Grid2 container spacing={"40px"}>
-            <Grid2 size={{ xs: 12, sm: 6, md: 4, lg: 3 }}>
-              <LastCard />
-            </Grid2>
-            <Grid2 size={{ xs: 12, sm: 6, md: 4, lg: 3 }}>
-              <LastCard />
-            </Grid2>
-            <Grid2 size={{ xs: 12, sm: 6, md: 4, lg: 3 }}>
-              <LastCard />
-            </Grid2>
-            <Grid2 size={{ xs: 12, sm: 6, md: 4, lg: 3 }}>
-              <LastCard />
-            </Grid2>
+            {Mainlinks.map((item) => (
+              <Link to={`/product/${item.id}`} key={item.id}>
+                <Grid2 key={item.id} size={{ xs: 12, sm: 6, md: 4, lg: 3 }}>
+                  <LastCard {...item}  gap={"20px"} key={item.id}/>
+                </Grid2>
+              </Link>
+            ))}
           </Grid2>
         </Container>
       </Box>

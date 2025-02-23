@@ -1,5 +1,4 @@
 import React from "react";
-import img from "../assets/product-2.png";
 import styled from "@emotion/styled";
 import { Box, Rating, Typography } from "@mui/material";
 import { COLORS } from "../config/colors";
@@ -30,10 +29,10 @@ const CardBadge = styled.span`
   left: 0;
 `;
 
-export const ProductCard = () => {
+export const ProductCard = ({img,title,model,size,factory,rating}) => {
   return (
     <ProductWrapper>
-      <CardBadge>Новинка</CardBadge>
+      <CardBadge>{title}</CardBadge>
       <Box mb={"20px"} textAlign={"center"}>
         <img src={img} alt="img" />
       </Box>
@@ -43,7 +42,7 @@ export const ProductCard = () => {
         fontSize={"18px"}
         color={COLORS.titleColor}
       >
-        Aster Q893A LVIZON LVIZON
+        {model}
       </Typography>
       <Typography
         mb={"8px"}
@@ -51,12 +50,12 @@ export const ProductCard = () => {
         fontSize={"14px"}
         color={COLORS.titleColor}
       >
-        Размер: 60x100
+        {size}
       </Typography>
       <Typography mb={"8px"} fontSize={"14px"} color={COLORS.titleColor}>
-        Производитель: Казахстан
+        {factory}
       </Typography>
-      <Rating readOnly value={4} />
+      <Rating readOnly value={rating} />
     </ProductWrapper>
   );
 };
