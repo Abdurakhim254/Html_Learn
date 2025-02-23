@@ -12,6 +12,7 @@ import bg from "../../assets/product1.png";
 import { SecondaryButton } from "../../components/secondary-button";
 import { ProductCard } from "../../components/product-card";
 import { Title } from "../title/title";
+import { LastCard } from "../../components/last-card";
 
 export const Home = () => {
   return (
@@ -66,6 +67,24 @@ export const Home = () => {
       </Box>
       <Box pt={"100px"}>
         <Title title={"Скидки"} link={"Все скидки"} />
+      </Box>
+      <Box py={"100px"}>
+        <Container maxWidth="xl">
+        <Grid2 container spacing={"40px"}>
+            <Grid2 size={{ xs: 12, sm: 6, md: 4, lg: 3 }}>
+              <LastCard />
+            </Grid2>
+            <Grid2 size={{ xs: 12, sm: 6, md: 4, lg: 3 }}>
+              <LastCard />
+            </Grid2>
+            <Grid2 size={{ xs: 12, sm: 6, md: 4, lg: 3 }}>
+              <LastCard />
+            </Grid2>
+            <Grid2 size={{ xs: 12, sm: 6, md: 4, lg: 3 }}>
+              <LastCard />
+            </Grid2>
+          </Grid2>
+        </Container>
       </Box>
     </>
   );
